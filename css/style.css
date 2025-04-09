@@ -58,7 +58,7 @@ html, body {
 }
 .menulabel{
     padding-left: 0.5%;
-    font-size: 2vh;
+    font-size: 0.75vw;
 }
 .whoamilabel, .experiencelabel, .skillslabel, .techlabel, .proyectslabel{
     text-decoration: underline;
@@ -77,25 +77,25 @@ html, body {
     height: 100%;
 }
 #welcomemsg p {
-    margin: 1vh;
+    margin: 1vw;
 }
 #welcomemsg1{
-    font-size: 3vh;
+    font-size: 2vw;
     font-weight: bold;
 }
 #welcomemsg2{
-    font-size: 2vh;
+    font-size: 1vw;
 }
 #btmwhoami{
     background: linear-gradient(145deg, #8aa0ff, #3e1475);
     border: none;
     color: white;
-    font-size: 2vh;
+    font-size: 1vw;
     padding: 1vh 1vw;
     margin: 1vh 0;
-    border-radius: 1vh;
+    border-radius: 0.7vw;
     cursor: pointer;
-    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
     transition: all 0.7s ease;
 }
 #btmwhoami:hover {
@@ -141,7 +141,7 @@ html, body {
     height: 100vh;
 }
 #whoamimsg1{
-    font-size: 4vh;
+    font-size: 3vw;
     font-weight: bold;
     animation: colorChange 1.5s infinite alternate;
 }
