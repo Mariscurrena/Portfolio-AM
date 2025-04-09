@@ -39,7 +39,6 @@ html, body {
     height: 100vh;
     color: white;
     font-family: 'Lucida Console', Monaco, monospace;
-    background-color: #000000;
     background-image: url('../img/code.gif');
     background-size: cover;
     background-position: center;
@@ -102,6 +101,60 @@ html, body {
 #btmwhoami:hover {
     background: linear-gradient(145deg, #3e1475, #8aa0ff);
     transform: scale(1.1);
+}
+
+/* ---------------------------- Whoami Section ----------------------------------  */
+#whoami{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: 'Lucida Console', Monaco, monospace;
+    background-image: url('../img/whoami.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+#whoami::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+#whoamimsg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 3vw;
+    margin: 0;
+    width: 45%;
+    height: 100vh;
+}
+#whoamimsg1{
+    font-size: 4vh;
+    font-weight: bold;
+    animation: colorChange 1.5s infinite alternate;
+}
+@keyframes colorChange {
+    0% {
+        text-shadow: 0.5vh 0.5vh 1.2vh #0084ff;
+    }
+    100% {
+        text-shadow: 0.5vh 0.5vh 1.2vh #30c016;
+    }
+}
+#whoamimsg2{
+    font-size: 2vh;
 }
 
 /* ---------------------------- Footer ----------------------------------  */
