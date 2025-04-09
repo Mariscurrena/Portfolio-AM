@@ -157,6 +157,78 @@ html, body {
     font-size: 2vh;
 }
 
+/* ---------------------------- Experience ----------------------------------  */
+
+
+/* ---------------------------- Skills ----------------------------------  */
+
+
+/* ---------------------------- Technologies ----------------------------------  */
+#tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+#tech::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+    filter: blur(8px);
+}
+.slider{
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(47, 47, 47, 0.4);
+}
+.slider .slide-track{
+    display: flex;
+    animation: scroll 35s linear infinite;
+    width: calc(175px*42);
+}
+.slider .slide{
+    width: 175px;
+}
+.slider .slide img{
+    width: 100%;
+}
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+}
+@keyframes scroll{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(calc(-175px*21))
+    }
+}
+#techlabel{
+    margin-top: 3vh;
+    padding: 0;
+    color: white;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 3vw;
+    animation: colorChange 1.5s infinite alternate;
+}
+
 /* ---------------------------- Footer ----------------------------------  */
 footer{
     display: flex;
