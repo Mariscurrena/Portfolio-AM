@@ -1,20 +1,114 @@
-header{
+/* ---------------------------- General ----------------------------------  */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.section{
     display: flex;
     align-items: center;
-    height: 5vh;
-    background-color: #c0c0c0;
-    padding-left: 1vw;
+    justify-content: baseline;
+    width: 96%;
+    background-color: #ffcc5f; /* -------------------------------------------------------------------delete */
+    padding: 2%;
+    border: solid black /* -------------------------------------------------------------------delete */
 }
+
+/* ---------------------------- Welcome Section ----------------------------------  */
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff00;
+    width: 99%;
+    padding-left: 1%;
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: 'Lucida Console', Monaco, monospace;
+    background-color: #000000;
+    background-image: url('../img/code.gif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+.welcome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+    filter: blur(8px);
+}
+.menulabel{
+    padding-left: 0.5%;
+    font-size: 2vh;
+}
+.whoamilabel, .experiencelabel, .skillslabel, .techlabel, .proyectslabel{
+    text-decoration: underline;
+    color: inherit;
+}
+#welcomemsg{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#welcomemsg p {
+    margin: 1vh;
+}
+#welcomemsg1{
+    font-size: 3vh;
+    font-weight: bold;
+}
+#welcomemsg2{
+    font-size: 2vh;
+}
+#btmwhoami{
+    background: linear-gradient(145deg, #8aa0ff, #3e1475);
+    border: none;
+    color: white;
+    font-size: 2vh;
+    padding: 1vh 1vw;
+    margin: 1vh 0;
+    border-radius: 1vh;
+    cursor: pointer;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
+    transition: all 0.7s ease;
+}
+#btmwhoami:hover {
+    background: linear-gradient(145deg, #3e1475, #8aa0ff);
+    transform: scale(1.1);
+}
+
+/* ---------------------------- Footer ----------------------------------  */
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5vh;
+    height: 5%;
     background-color: #c0c0c0;
-    padding-left: 1vw;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
