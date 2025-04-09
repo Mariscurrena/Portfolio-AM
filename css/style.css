@@ -198,10 +198,10 @@ html, body {
 .slider .slide-track{
     display: flex;
     animation: scroll 35s linear infinite;
-    width: calc(175px*42);
+    width: calc(8vw*42);
 }
 .slider .slide{
-    width: 175px;
+    width: 8vw;
 }
 .slider .slide img{
     width: 100%;
@@ -217,16 +217,24 @@ html, body {
         transform: translateX(0)
     }
     100% {
-        transform: translateX(calc(-175px*21))
+        transform: translateX(calc(-8vw*21))
     }
 }
 #techlabel{
-    margin-top: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 0;
     padding: 0;
     color: white;
     font-family: 'Lucida Console', Monaco, monospace;
     font-size: 3vw;
     animation: colorChange 1.5s infinite alternate;
+}
+#techlabel1{
+    margin-bottom: 3vh;
+    padding: 0;
+    color: white;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 1.2vw;
 }
 
 /* ---------------------------- Footer ----------------------------------  */
