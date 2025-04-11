@@ -853,7 +853,7 @@ footer{
 
     /* Projects */
     #projects{
-        height: 145vh;
+        height: 165vh;
     }
     .projct-cont {
       flex-direction: column;
