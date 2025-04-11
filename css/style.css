@@ -304,7 +304,42 @@ html, body {
     background-color: black;
     font-family: 'Lucida Console', Monaco, monospace;
 }
-
+#skills h2{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 0;
+    color: white;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 3vw;
+    animation: colorChange 1.5s infinite alternate;
+}
+.skills-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 87vw;
+    height: 81vh;
+    padding: 1vh;
+}
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    border-radius: 3vh;
+    background-color: rgba(12, 69, 120, 0.3);
+    box-shadow: 0 0 1vh rgba(0, 132, 255, 1);
+}
+.skills-cont .inner:nth-child(1),
+.skills-cont .inner:nth-child(2),
+.skills-cont .inner:nth-child(3),
+.skills-cont .inner:nth-child(4),
+.skills-cont .inner:nth-child(5),
+.skills-cont .inner:nth-child(6) {
+    width: 32%; 
+}
 /* ---------------------------- Technologies ----------------------------------  */
 #tech{
     display: flex;
