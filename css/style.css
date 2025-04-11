@@ -909,4 +909,262 @@ footer{
       font-size: 1vh;
       padding: 1vh;
     }
-  }  
+}  
+
+/* Vertical Monitors */
+@media screen and (max-aspect-ratio: 10/16) {
+    /* General Layout */
+    *, *::before, *::after {
+        box-sizing: border-box;
+      }
+    html, body {
+      font-size: 2.5vh;
+      overflow-x: hidden;
+    }
+    .section {
+      flex-direction: column !important;
+      padding: 4vw;
+      width: 100%;
+      height: 100vh;
+    }
+  
+    /* Menu */
+    .menu {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2vw;
+      padding: 0;
+      margin: 0;
+    }
+    .menulabel {
+        font-size: 3.5vw;
+        margin: 0;
+        padding: 0;
+    }
+    .menulabel p{
+        margin: 0;
+        padding: 0;
+    }
+    /* Welcome Section */
+    #welcomemsg {
+      width: 100%;
+      padding: 5vh 2vw;
+    }
+    #welcomemsg1 {
+      font-size: 4.5vh;
+      padding: 0 5vw;
+    }
+    #welcomemsg2 {
+      font-size: 2.2vh;
+      padding: 0 5vw;
+    }
+    #btmwhoami {
+      font-size: 2.5vh;
+      padding: 1.5vh 5vw;
+    }
+
+    /* Whoami */
+    #whoamimsg {
+        width: 100%;
+        padding: 5vh 2vw;
+        text-align: center;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    #whoamimsg2 {
+        font-size: 1.5vh;
+        margin-bottom: 2vh;
+        line-height: 1.4;
+        padding: 0 5vw;
+    }
+    #whoamimsg1 {
+      font-size: 4.5vh;
+    }
+  
+    /* Experience Section */
+    .exp-cont {
+        flex-direction: column;
+        width: 100vw;
+        gap: 3vh;
+    }
+    .exp {
+        width: 95vw;
+        height: 27vh;
+        padding: 0.5vh 2vw;
+        margin: 0;
+    }
+    .exp img{
+        width: 60%;
+        height: auto; 
+    }
+    .imge{
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .imge img {
+        height: 10vh;
+        width: auto;
+    }
+    .exp h2 {
+      font-size: 2vh;
+    }
+    .exp p {
+      font-size: 1.5vh;
+    }
+    .exp button {
+      font-size: 2vh;
+      padding: 1vh 4vw;
+    }
+    .modal-content{
+        padding: 2vw;
+        margin: 0;
+    }
+    .modal-content p, li{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+        font-size: 1.5vh;
+    }
+    #experience #techlabel{
+        font-size: 4.5vh;
+        margin: 0;
+        padding: 0;
+    }
+  
+    /* Skills */
+    #skills h2{
+        font-size: 4.5vh;
+    }
+    .skills-cont {
+      flex-direction: column;
+      width: 100%;
+      height: 80%;
+      gap: 0 0 0 0;
+    }
+    .inner {
+      width: 100%;
+      height: 26%;
+      margin: 0;
+      padding: 0;
+    }
+    .inner h3 {
+      font-size: 3.5vw;
+      margin: 0.5vh 2vh;
+      padding: 0;
+    }
+    .inner p {
+      font-size: 2.75vw;
+      margin: 0 2vh;
+      padding: 0;
+    }
+  
+    /* Technology Slider */
+    .slider{
+        width: 100vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        background-color: rgba(47, 47, 47, 0.4);
+    }
+    .slider .slide-track{
+        display: flex;
+        animation: scroll 80s linear infinite;
+        width: calc(90vw*42);
+    }
+    .slider .slide{
+        width: 90vw;
+    }
+    .slider .slide img{
+        width: 100%;
+    }
+    .slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh;
+    }
+    @keyframes scroll{
+        0% {
+            transform: translateX(0)
+        }
+        100% {
+            transform: translateX(calc(-90vw*21))
+        }
+    }
+    #techlabel{
+        font-size: 4.5vh;
+        padding: 8vh 3vw;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #techlabel1{
+        font-size: 2vh;
+        padding: 0 5vw;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    /* Projects */
+    #projects{
+        height: 135vh;
+    }
+    .projct-cont {
+      flex-direction: column;
+      gap: 2vh;
+    }
+    .projct {
+        flex: 1 1 45vw;
+        height: 50%;
+        background-color: rgba(12, 69, 120, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4vh;
+        animation: boxChange 5s infinite alternate;
+    }
+    .img-pjt {
+      width: 40%;
+      height: auto;
+    }
+    .img-pjt img {
+      width: 100%;
+      height: auto;
+    }
+    .desc-pjt {
+      padding: 2vh;
+    }
+    .desc-pjt h2 {
+      font-size: 2vh;
+    }
+    .desc-pjt p {
+      font-size: 1vh;
+    }
+    .btn-pjt button {
+      font-size: 2vh;
+      padding: 1vh 4vw;
+    }
+    #projectlabel{
+        font-size: 4.5vh;
+        padding: 3vw;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #projectlabel1{
+        font-size: 2vh;
+        padding: 0 5vw;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    /* Footer */
+    .footerlabel {
+      font-size: 1vh;
+      padding: 1vh;
+    }
+}  
