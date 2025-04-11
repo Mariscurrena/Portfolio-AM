@@ -325,7 +325,7 @@ html, body {
     color: white;
     font-family: 'Lucida Console', Monaco, monospace;
     font-size: 3vw;
-    animation: colorChange 1.5s infinite alternate;
+    text-shadow: 0.5vh 0.5vh 1.2vh #0084ff;
 }
 .skills-cont {
     display: flex;
@@ -344,7 +344,6 @@ html, body {
     height: 35vh;
     border-radius: 3vh;
     background-color: rgba(12, 69, 120, 0.3);
-    box-shadow: 0 0 1vh rgba(0, 132, 255, 1);
 }
 .skills-cont .inner:nth-child(1),
 .skills-cont .inner:nth-child(2),
@@ -361,17 +360,43 @@ html, body {
     margin: 0;
 }
 .inner h3{
-    font-size: 3vh;
+    font-size: 4vh;
     margin: 2vh 0 1vh 0;
     padding: 0;
     text-shadow: 0 0 2vh rgb(67, 163, 247);
     text-align: center;
 }
 .inner p{
-    margin: 0 0 2vh 0;
+    margin: 0 0 3vh 0;
     padding: 0 5vh;
-    font-size: 2vh;
+    font-size: 2.3vh;
     text-align: center;
+}
+.skills-cont .inner:nth-child(1),
+.skills-cont .inner:nth-child(3),
+.skills-cont .inner:nth-child(5){
+    animation: boxskill1 2s infinite alternate;
+}
+.skills-cont .inner:nth-child(2),
+.skills-cont .inner:nth-child(4),
+.skills-cont .inner:nth-child(6){
+    animation: boxskill2 2s infinite alternate;
+}
+@keyframes boxskill1 {
+    0% {
+        box-shadow: 0 0 2vh rgba(0, 132, 255, 1);
+    }
+    100%{
+        box-shadow: 0 0 2vh rgb(85, 67, 247);
+    }
+}
+@keyframes boxskill2 {
+    0%{
+        box-shadow: 0 0 2vh rgb(85, 67, 247);
+    }
+    100% {
+        box-shadow: 0 0 2vh rgba(0, 132, 255, 1);
+    }
 }
 /* ---------------------------- Technologies ----------------------------------  */
 #tech{
