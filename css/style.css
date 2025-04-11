@@ -301,8 +301,22 @@ html, body {
     width: 100%;
     height: 100vh;
     color: white;
-    background-color: black;
     font-family: 'Lucida Console', Monaco, monospace;
+    background-image: url('../img/speaker.jfif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+#skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: -1;
 }
 #skills h2{
     margin-top: 2vh;
@@ -440,7 +454,7 @@ html, body {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-image: url('../img/setup.jpeg');
     background-size: cover;
     background-position: center;
