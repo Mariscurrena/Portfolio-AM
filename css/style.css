@@ -265,14 +265,24 @@ html, body {
     transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
 }
 .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 3vh;
     background-color: rgba(0, 0, 10, 0.75);
     margin: 15% auto;
-    padding: 20px;
+    padding: 3vh 10vh;
     box-shadow: 0 0 1vh rgba(0, 132, 255, 1);
     width: 80vw;
     height: 50vh;
     position: relative;
+}
+.modal-content p, li{
+    font-size: 3vh;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
 }
 .modal.show {
     opacity: 1;
