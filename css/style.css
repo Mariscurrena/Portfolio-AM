@@ -633,3 +633,16 @@ footer{
     text-decoration: underline;
     color: inherit;
 }
+#contact{
+    animation: fade 1.5s infinite alternate;
+}
+@keyframes fade {
+    0% {
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0.5vh 0.5vh 1vh #0084ff00;
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0.1vh 0.1vh 1vh rgba(0, 132, 255, 1);
+    }
+}
