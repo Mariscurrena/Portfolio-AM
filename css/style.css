@@ -282,7 +282,7 @@ html, body {
     position: relative;
 }
 .modal-content p, li{
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: justify;
     margin: 0;
     padding: 0;
@@ -569,14 +569,14 @@ html, body {
     font-family: 'Lucida Console', Monaco, monospace;
 }
 .desc-pjt h2{
-    font-size: 2.5vw;
+    font-size: 1.8vw;
     animation: pjtChange 5s infinite alternate;
     padding: 0;
     padding-top: 1vh;
     margin: 0;
 }
 .desc-pjt p{
-    font-size: 1vw;
+    font-size: 0.9vw;
     padding: 0;
     text-align: justify;
     padding-bottom: 0;
