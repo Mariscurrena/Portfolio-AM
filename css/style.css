@@ -156,7 +156,7 @@ html, body {
     }
 }
 #whoamimsg2{
-    font-size: 2.75vh;
+    font-size: 2vh;
 }
 
 /* ---------------------------- Experience ----------------------------------  */
@@ -282,7 +282,7 @@ html, body {
     position: relative;
 }
 .modal-content p, li{
-    font-size: 3vh;
+    font-size: 2vw;
     text-align: justify;
     margin: 0;
     padding: 0;
@@ -363,7 +363,7 @@ html, body {
     margin: 0;
 }
 .inner h3{
-    font-size: 4vh;
+    font-size: 2vw;
     margin: 2vh 0 1vh 0;
     padding: 0;
     text-shadow: 0 0 2vh rgb(67, 163, 247);
@@ -372,7 +372,7 @@ html, body {
 .inner p{
     margin: 0 0 3vh 0;
     padding: 0 5vh;
-    font-size: 2.3vh;
+    font-size: 1vw;
     text-align: center;
 }
 .skills-cont .inner:nth-child(1),
@@ -569,14 +569,14 @@ html, body {
     font-family: 'Lucida Console', Monaco, monospace;
 }
 .desc-pjt h2{
-    font-size: 4vh;
+    font-size: 2.5vw;
     animation: pjtChange 5s infinite alternate;
     padding: 0;
     padding-top: 1vh;
     margin: 0;
 }
 .desc-pjt p{
-    font-size: 1.8vh;
+    font-size: 1vw;
     padding: 0;
     text-align: justify;
     padding-bottom: 0;
@@ -881,24 +881,24 @@ footer{
       padding: 2vh;
     }
     .desc-pjt h2 {
-      font-size: 2vh;
+      font-size: 2vw;
     }
     .desc-pjt p {
-      font-size: 1vh;
+      font-size: 1vw;
     }
     .btn-pjt button {
-      font-size: 2vh;
+      font-size: 2vw;
       padding: 1vh 4vw;
     }
     #projectlabel{
-        font-size: 4.5vh;
+        font-size: 4.5vw;
         padding: 3vw;
         padding-bottom: 0;
         margin-bottom: 0;
         text-align: center;
     }
     #projectlabel1{
-        font-size: 2vh;
+        font-size: 2vw;
         padding: 0 5vw;
         padding-bottom: 0;
         margin-bottom: 0;
